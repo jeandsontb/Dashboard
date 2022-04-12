@@ -13,7 +13,10 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@hookform/resolvers": "^2.8.8",
+    "@types/faker": "^5.5.3",
     "apexcharts": "^3.35.0",
+    "axios": "^0.26.1",
+    "faker": "^5.5.3",
     "framer-motion": "^6.2.9",
     "miragejs": "^0.1.43",
     "next": "12.1.4",
@@ -22,6 +25,7 @@
     "react-dom": "18.0.0",
     "react-hook-form": "^7.29.0",
     "react-icons": "^4.3.1",
+    "react-query": "^3.34.19",
     "yup": "^0.32.11"
   },
   "devDependencies": {
