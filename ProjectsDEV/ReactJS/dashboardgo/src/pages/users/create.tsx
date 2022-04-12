@@ -29,8 +29,8 @@ const UserCreate = () => {
   return (
     <Box>
       <Header />
-
-      <Flex w="100%" my="6" maxHeight={1480} mx="auto" px="6">
+      
+      <Flex w="100%" my="6" maxWidth={1480} mx="auto" px="6">
         <Sidebar />
 
         <Box as='form' flex="1" borderRadius={8} bg="gray.800" p={["6", "8"]} onSubmit={handleSubmit(handleCreateUser)}>
