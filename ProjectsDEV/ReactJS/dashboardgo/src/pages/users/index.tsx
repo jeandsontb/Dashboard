@@ -25,9 +25,10 @@ import { Header } from "../../components/Header";
 import { Pagination } from "../../components/Pagination";
 import NextLink from "next/link";
 import { api } from "../../services/api";
-import { useUsers } from "../../services/hooks/useUsers";
+import { getUsers, useUsers } from "../../services/hooks/useUsers";
 import { useState } from "react";
 import { queryClient } from "../../services/queryClient";
+import { GetServerSideProps } from "next";
 
 const UserList = () => {
   const [page, setPage] = useState(1);
@@ -156,3 +157,13 @@ const UserList = () => {
 };
 
 export default UserList;
+
+// export const getServerSideProps: GetServerSideProps = async () => {
+//   const { users, totalCount } = await getUsers(1);
+
+//   return {
+//     props: {
+//       users,
+//     },
+//   };
+// };
